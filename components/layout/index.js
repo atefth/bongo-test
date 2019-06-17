@@ -1,6 +1,7 @@
 import React from 'react';
 import { AppBar, Checkbox, IconButton } from 'react-toolbox/lib';
 import { Layout, NavDrawer, Panel, Sidebar } from 'react-toolbox/lib';
+import './index.css';
 import TaskList from '../task-list/index.js'
 import Anagram from '../anagram/index.js'
 import DesignPattern from '../design-pattern/index.js'
@@ -48,8 +49,10 @@ class MainLayout extends React.Component {
           <TaskList onTaskSelection={this.onTaskSelection}/>
         </NavDrawer>
         <Panel>
-          <AppBar leftIcon='menu' onLeftIconClick={ this.toggleDrawerActive } rightIcon='fiber_pin' onRightIconClick={ this.toggleDrawerPinned } />
-          {currentTask}
+          <AppBar title="BongoBD Test" leftIcon='menu' onLeftIconClick={ this.toggleDrawerActive } rightIcon='fiber_pin' onRightIconClick={ this.toggleDrawerPinned } />
+            <div className='taskContainer'>
+              {currentTask}
+            </div>
         </Panel>
       </Layout>
     );

@@ -19,7 +19,7 @@ module.exports = {
           options: {
             modules: true,
             sourceMap: true,
-            importLoaders: 1,
+            // importLoaders: 1,
             localIdentName: "[name]--[local]--[hash:base64:8]"
           }
         },
@@ -41,7 +41,7 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: "./public/index.html",
-      filename: "./index.html"
+      filename: "index.html"
     })
   ]
 };
