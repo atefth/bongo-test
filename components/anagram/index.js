@@ -21,9 +21,7 @@ class Anagram extends React.Component {
   };
 
   checkIfAnagram = (firstString, secondString) => {
-    if (this.reduceString(firstString) === this.reduceString(secondString)) {
-      this.setState({isAnagram: true});
-    }
+    if (this.reduceString(firstString) === this.reduceString(secondString)) this.setState({isAnagram: true});
   };
 
   render () {

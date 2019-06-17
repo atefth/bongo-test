@@ -17,8 +17,48 @@ body {
 }
 
 .code {
-  border: #ededed;
+  border: 1px #ededed;
   background-color: rgb(209, 196, 233);
   padding: 10px 20px;
   margin-top: 15px;
+}
+
+.videoPlayerContainer {
+  border: 2px solid #ededed;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.videoPlayer {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.videoPlayerButton {
+  border: 1px #ededed;
+  padding: 5px;
+  background-color: rgb(209, 196, 233);
+  margin-right: 5px;
+}
+
+.videoPlayerVolume {
+/*  position: absolute;
+  top: 77.5%;
+  left: 10.6%;
+  transform: rotate(270deg);*/
+}
+
+.videoPlayerControls {
+  padding: 10px 0px 5px 0px;
+  border-top: 2px solid #ededed;
+}
+
+.videoPlayerOption {
+  width: 180px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
 }
